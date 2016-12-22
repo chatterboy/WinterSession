@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Created by AIServer on 2016-12-22.
  */
 public class Prob1 {
-    public static boolean isAlphabet(char ch) {
+    private static boolean isAlphabet(char ch) {
         return (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
     }
     public static void main(String [] args) {
