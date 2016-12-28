@@ -56,21 +56,21 @@ public class Prob6 {
             tmp.draw();
         }
     }
-    static void erase(int pos) { // This is problem what i say
+    static void erase(int pos) {
         int n = 0;
         for (DObject tmp = head; tmp != null; tmp = tmp.next, ++n);
         if (pos < 1 || pos > n) {
             System.out.println("올바른 위치를 입력하세요.");
         } else {
-            int m = 0;
+            int m = 1;
             DObject now = head;
             for (; m < pos; now = now.next, ++m);
             if (m == 1) {
                 head = now == null ? null : now.next;
             } else {
                 DObject prev = head;
-                for (; prev.next.next != now; prev = prev.next);
-                prev.next.next = now;
+                for (; prev.next != now; prev = prev.next);
+                prev.next = now.next;
             }
         }
     }
