@@ -3,9 +3,6 @@ package chap08;
 import java.io.*;
 import java.util.ArrayList;
 
-/**
- * Created by AIServer on 2017-01-02.
- */
 public class Prob07 {
     public static void main(String [] args) throws FileNotFoundException {
         File src = new File("C:/Users/AIServer/IdeaProjects/WinterSession/data/chap08/a.jpg");
